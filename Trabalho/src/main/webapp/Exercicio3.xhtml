@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:f="http://xmlns.jcp.org/jsf/core"
+	xmlns:p="http://primefaces.org/ui">
+
+<h:head>
+	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+	<title>Exercico 3</title>
+</h:head>
+
+<h:body>
+	<h:form>
+
+		<p:messages closable="true">
+			<p:autoUpdate />
+		</p:messages>
+
+		<br />
+
+		<span class="ui-float-label"> <p:inputText id="txtdolar"
+				value="#{dolarBean.dolar}" /> <p:outputLabel value=" valor do dólar "
+				for="txtdolar" />
+		</span>
+
+		<br />
+		<span class="ui-float-label"> <p:inputText id="txtreal"
+				value="#{dolarBean.real}" /> <p:outputLabel value="quantidade de reais "
+				for="txtreal" />
+		</span>
+
+		<br />
+	
+		<p:commandButton value="Calcular"
+			actionListener="#{dolarBean.Calculo()}" />
+
+	</h:form>
+</h:body>
+
+</html>

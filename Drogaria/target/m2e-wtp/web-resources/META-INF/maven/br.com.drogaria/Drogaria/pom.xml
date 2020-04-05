@@ -1,0 +1,58 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>br.com.drogaria</groupId>
+	<artifactId>Drogaria</artifactId>
+	<version>2020.03.03</version>
+	<packaging>war</packaging>
+
+	<!-- comentario -->
+	<properties>
+		<!-- codificação dos caracteres -->
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<!-- versão do JDK -->
+		<maven.compiler.source>1.8</maven.compiler.source>
+		<!-- versão do JRE -->
+		<maven.compiler.target>1.8</maven.compiler.target>
+		<!-- erro na ausencia do arquivo web.xml ausente -->
+		<failOnMissingWebXml>false</failOnMissingWebXml>
+	</properties>
+
+	<!-- são as dependencias - modulos que são instalados nos projetos -->
+	<dependencies>
+
+		<!-- mojarra (JavaServer Faces) -->
+
+		<dependency>
+			<groupId>org.glassfish</groupId>
+			<artifactId>javax.faces</artifactId>
+			<version>2.3.9</version>
+		</dependency>
+
+		<!-- primefaces -->
+		<dependency>
+			<groupId>org.primefaces</groupId>
+			<artifactId>primefaces</artifactId>
+			<version>8.0</version>
+		</dependency>
+		<!-- CDI- -->
+		<dependency>
+			<groupId>javax.enterprise</groupId>
+			<artifactId>cdi-api</artifactId>
+			<version>2.0</version>
+
+		</dependency>
+
+		<!-- omnifaces -->
+		<dependency>
+			<groupId>org.omnifaces</groupId>
+			<artifactId>omnifaces</artifactId>
+			<version>1.14.1</version>
+		</dependency>
+
+
+
+	</dependencies>
+
+</project>
